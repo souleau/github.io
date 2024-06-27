@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'QuicksandBold';
+    src: url('fonts/Quicksand-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuicksandLight';
+    src: url('fonts/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuicksandMedium';
+    src: url('fonts/Quicksand-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuicksandRegular';
+    src: url('fonts/Quicksand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuicksandSemiBold';
+    src: url('fonts/Quicksand-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
+
+.custom-audio-player {
+
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 480px;
+    margin: 0 auto;
+    color: white;
+    height: 150px;
+}
+
+.album-art {
+    margin-bottom: 10px;
+    
+}
+
+.album-art img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border-bottom: 1px solid #8D0000;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.425);
+}
+
+.music-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.title-font{
+
+    font-family: 'QuicksandBold', Arial, sans-serif; 
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.controls button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin: 0 10px;
+}
+
+.controls button:hover {
+    color: #ff0000;
+}
+
+.timeline {
+    margin-bottom: 10px;
+}
+
+.timeline input[type="range"] {
+    width: 80%;
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+.timeline input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: #ff0000;
+    border-radius: 5px;
+}
+
+.timeline input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.timeline input[type="range"]:focus {
+    outline: none;
+}
+
+.volume-control {
+    margin-bottom: 10px;
+}
+
+.volume-control input[type="range"] {
+    width: 80%;
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+.volume-control input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: #ff0000;
+    border-radius: 5px;
+}
+
+.volume-control input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume-control input[type="range"]:focus {
+    outline: none;
+}
+
+.volume-control span, .timeline span {
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+}

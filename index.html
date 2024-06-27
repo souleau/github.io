@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contenair.css">
+    <link rel="stylesheet" href="css/profilecard.css">
+    <link rel="stylesheet" href="css/infocard.css">
+    <link rel="stylesheet" href="css/audio.css">
 </head>
+<style>
+        body {
+            background-size: cover;
+            background-position: center;
+            background-image: url("img/fate-series-minimalism-black-background-red-wallpaper-preview.jpg");
+            position: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            color: white;
+            font-family: 'Quicksand', Arial, sans-serif;
+        }
+</style>
 <body>
-    
+    <div class="box">
+        <div class="profile-card" data-tilt data-tilt-reverse="true" data-tilt-max="6" data-tilt-speed="2500">
+            <div class="profile-header">
+                <img src="img/header.gif" class="header-image" draggable="false">
+            </div>
+                <div class="profile-content">
+                    <img src="img/pfp.gif" class="profile-picture" draggable="false">
+                    <div class="username">user <img src="img/badge.png" draggable="false" class="badge" alt="caca"></div>
+                    <p class="bio-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quidem dolorem? Dolore, voluptatem. Culpa aspernatur dignissimos exercitationem alias illo, adipisci a inventore impedit distinctio totam, beatae veritatis deserunt officia rem?</p>
+                    <div class="tag">owner</div>
+                </div>
+                
+            <div>
+     
+            </div>
+
+        </div>
+        <div class="info-card" data-tilt data-tilt-reverse="true" data-tilt-max="6" data-tilt-speed="2500">
+            <div class="custom-audio-player">
+                <audio id="myAudio">
+                    <source src="music/Kali Uchis - Moonlight (Official Lyric Video).mp3" type="audio/mpeg">
+                </audio>
+                <div class="album-art">
+                    <img id="albumImage" class="music-pictures" src="img/Kali_Uchis_Moonlight.png" alt="Pochette de l'album">
+                </div>
+                <div id="musicTitle" class="music-title" class="title-font">Moonlight<br></div>
+
+                <div class="controls">
+                    <button id="backBtn"><</button>
+                    <button id="playPauseBtn">></button>
+                    <button id="skipBtn">></button>
+                </div>
+                <div class="timeline">
+                    <input type="range" id="progressBar" min="0" max="100" value="0">
+                </div>
+                <div class="volume-control">
+                    <input type="range" id="volumeRange" min="0" max="1" step="0.01" value="1">
+                </div>
+            </div>  
+        </div>
+    </div>
+
 </body>
-</html>l
+<script src="js/tiltvanilla.js"></script>
+<script src="js/jsaudio.js"></script>
+</html>
