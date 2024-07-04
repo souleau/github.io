@@ -8,9 +8,10 @@
     width: 600px;
     backdrop-filter: blur(5.4px); 
     height: 420px;
+    
     text-align: left;
     position: relative;
-    border: 1px solid #ff0000;
+    border: 1px solid #433146;
     font-family: 'QuickSand', Arial, sans-serif; 
 }
 
@@ -20,7 +21,7 @@
     border-radius: 10px 10px 0 0;
     height: 150px;
     object-fit: cover;
-    border-bottom: 1px solid #ff0000;
+    border-bottom: 1px solid #433146;
 }
 
 .profile-content {
@@ -34,13 +35,13 @@
     width: 135px;
     height: 135px;
     border-radius: 50%;
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 2px solid #433146;
     position: absolute;
     top: -16px; 
     left: 45px;
     transform: translateY(-50%);
 
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.425);
+    box-shadow: 0 4px 8px rgba(255, 0, 234, 0.425);
 }
 
 .username {
@@ -51,7 +52,7 @@
     border-radius: 5px;
     display: inline-block;
     position: absolute;
-    bottom: 110px;
+    bottom: 90px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -60,9 +61,10 @@
     transform: translateY(50%);
 }
 
+
 .tag {
     font-family: 'Quicksand-Regular', Arial, sans-serif;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 0, 221);
     padding: 5px 10px;
     border-radius: 5px;
     display: inline-block;
